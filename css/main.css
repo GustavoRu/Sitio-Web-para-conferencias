@@ -15,7 +15,7 @@ html {
   color: #ffffff;
   font-size: 1em;
   line-height: 1.4;
-}
+}   
 
 /*
  * Remove text-shadow in selection highlight:
@@ -257,7 +257,7 @@ p.ciudad{
 p.slogan {
   text-transform: none;
   text-align: center;
-  color: white;
+  color: #ffffff;
   
 }
 .slogan span{
