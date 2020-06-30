@@ -435,6 +435,65 @@ div.programa-evento{
   font-size: 20px;
 }
 
+.lista-invitados{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.invitado{
+  overflow: hidden;
+  position: relative;
+}
+.invitado p{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 15px 10px;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  text-align: left;
+  color: var(--primario);
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  transition: all .5s ease-in-out;
+  max-width: 100%;
+}
+.invitado img{
+  max-width: 100%;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  transition: all .5s ease-in-out;
+}
+.invitado img:hover{
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+}
+.invitado:hover p{
+  bottom: -80px;
+  opacity: 0;
+}
+@media(max-width:768px){
+  .invitado p{
+    max-height: 20%;
+    font-size: 12px;
+    padding: 15px 10px;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+}
+@media(min-width:768px){
+  .lista-invitados{
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 3fr);
+  }
+  .invitado img{
+    max-width: 100%;
+  }
+}
+
+
 
 
 /* ==========================================================================
