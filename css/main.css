@@ -159,6 +159,12 @@ h3{
   margin-top: 1rem;
   display: inline-block;
   transition: all .5s ease-in-out;
+  border: 2px solid var(--primario);
+}
+.button.hollow,
+.button.hollow:hover{
+  background-color: white;
+  color: var(--primario);
 }
 .button:hover{
   background-color: #e33000;
@@ -560,6 +566,17 @@ div.resumen-evento div{
   background-color: #ffffff;
   padding: 40px 0;
   text-align: center;
+  transition: all .5s ease-in-out;
+}
+.tabla-precios:hover{
+  transform: scale(1.1);
+  border: 1px solid var(--primario);
+  box-shadow: 0px 0px 50px #666;
+}
+.tabla-precios h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 .detalles-lista div{
   font-family: 'PT Sans', sans-serif;
@@ -571,11 +588,23 @@ div.resumen-evento div{
   line-height: 26px;
 }
 .num{
-  color: var(--primario);
+  color:#000000;
   font-size: 3rem;
   font-weight: bold;
   display: block;
   margin: 0 0 10px 0;
+  font-family: 'Oswald', sans-serif; 
+  margin-top: 1rem;
+}
+.detalles-lista div:before{
+  font-family: 'FontAwesome';
+  display: inline-block ;
+  vertical-align: top;
+  padding: 0 5px;
+  font-size: 20px;
+  color:green;
+  -webkit-font-smoothing: antialiased;
+  content: '\f00c';
 }
 /* ==========================================================================
    Helper classes
