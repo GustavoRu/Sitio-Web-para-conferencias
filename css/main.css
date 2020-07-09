@@ -368,7 +368,7 @@ nav.navegacion-principal a:hover{
 
 /* talleres*/
 section.programa{
-  position: relative; /* necesario dar absolut al padre para haver esto*/
+  position: relative; /* necesario dar absolut al padre para hacer esto*/
 }
 div.contenedor-video{
   max-width: 100%;
@@ -492,10 +492,91 @@ div.programa-evento{
     max-width: 100%;
   }
 }
+/*contador */
+.contador{
+  position: relative;
+  height: auto;
+}
+.parallax::before{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-filter: brightness(.8);
+  filter: brightness(.8);
+}
+.contador::before{
+  background-image: url(../img/bg-resumen.jpg);
+  content: '';
+}
+.resumen-evento{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 1rem 0;
+}
+div.resumen-evento div{
+  width: 50%;
+  float: left;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+}
+@media(min-width:768px){
+  div.resumen-evento div{
+    width: 25%;
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+}
+.numero{
+  color: var(--primario);
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  margin: 0 0 10px 0;
+}
+/*tabla de precios*/ 
 
-
-
-
+.lista{
+  padding: 10px;
+  
+}
+@media(min-width:768px){
+  .lista{
+    float: left;
+    width: 33.3%;
+  }
+}
+.tabla-precios{
+  border: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+.detalles-lista div{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 550;
+  color: #868686;
+  line-height: 26px;
+}
+.num{
+  color: var(--primario);
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  margin: 0 0 10px 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
